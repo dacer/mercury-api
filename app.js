@@ -10,7 +10,7 @@ app.post('/parse', (req, res) => {
         headers: {
             'User-Agent': agent(),
         },
-        contentType: 'markdown'
+        contentType: 'text'
     }).then(result => res.send(result));
 })
 
