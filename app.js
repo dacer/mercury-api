@@ -4,9 +4,8 @@ const express = require('express')
 const app = express()
 const port = 9697
 
-app.use(express.json());
-app.post('/parse', (req, res) => {
-    Mercury.parse(req.body.url, {
+app.get('/parser', (req, res) => {
+    Mercury.parse(req.query.url, {
         headers: {
             'User-Agent': agent(),
         },
