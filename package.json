@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@postlight/mercury-parser": "^2.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "secure-random-user-agent": "^2.0.1"
   }
 }
